@@ -33,7 +33,7 @@ $ kubectl create namespace jellyfin
 ```
 
 Next we need to create the core manifest for deployment:
-```
+```bash
 $ kubectl -n jellyfin create deploy jellyfin --image=jellyfin/jellyfin:10.10.3
 ```
 
@@ -67,7 +67,7 @@ status: {}
 ```
 
 Ports,  Environment Variables, Volumes and Volume Mounts need to be added to the deployment in container section like this:
-```
+```yaml
 containers:
 - name: jellyfin
   image: jellyfin/jellyfin:10.10.3
@@ -98,7 +98,7 @@ containers:
 ```
 
 Also volumes need to be added under spec
-```
+```yaml
 spec:
 ...
   volumes:
