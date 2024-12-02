@@ -264,3 +264,6 @@ If you choose to run the manifests individually, follow the same order in which 
 
 ## Conclusion
 By following these steps, you can successfully convert a Docker Compose file into Kubernetes objects for Jellyfin. This allows you to leverage Kubernetes' powerful orchestration capabilities for managing your media server.
+
+## Links
+- [Manifests created in this article](https://github.com/aslan-im/jellyfin-manifests)
